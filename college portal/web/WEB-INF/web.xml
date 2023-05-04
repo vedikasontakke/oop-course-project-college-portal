@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>college_result</servlet-name>
+        <servlet-class>college_result</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>clg_list</servlet-name>
+        <servlet-class>clg_list</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostFeedback</servlet-name>
+        <servlet-class>PostFeedback</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>college_result</servlet-name>
+        <url-pattern>/college_result</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>clg_list</servlet-name>
+        <url-pattern>/clg_list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostFeedback</servlet-name>
+        <url-pattern>/PostFeedback</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
